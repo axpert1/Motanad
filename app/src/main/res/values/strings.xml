@@ -3,6 +3,9 @@
 
     <string name="rupee">\u20B9</string>
 
+    <!-- AdMob ad unit IDs -->
+    <string name="interstitial_full_screen">ca-app-pub-2122945067978965/6814939619</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

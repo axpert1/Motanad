@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity android:name=".activity.Dashboard" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.SplashActivity">
@@ -26,7 +31,15 @@
         <activity android:name=".activity.MyBalanceActivity" />
         <activity android:name=".activity.LevelAcitvity" />
         <activity android:name=".activity.ProfileAcitvity" />
-        <activity android:name=".activity.ReferActivity"></activity>
+        <activity android:name=".activity.ReferActivity" />
+        <activity android:name=".activity.AdvertiseActivity" />
+
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".activity.AddActivity"></activity>
     </application>
 
 </manifest>

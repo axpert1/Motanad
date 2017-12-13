@@ -104,6 +104,8 @@ public class Dashboard extends BaseAppCompactActivity implements NavMenuFrag.Fra
             Util.startActivity(mContext, ProfileAcitvity.class);
         } else if (menuNmae.equalsIgnoreCase(mContext.getResources().getString(R.string.InviteFriends))){
             Util.startActivity(mContext, ReferActivity.class);
+        } else if (menuNmae.equalsIgnoreCase(mContext.getResources().getString(R.string.AdvertisWithUs))){
+            Util.startActivity(mContext, AddActivity.class);
         }
 
     }

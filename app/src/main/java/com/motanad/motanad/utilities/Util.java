@@ -31,9 +31,13 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.motanad.motanad.R;
+import com.motanad.motanad.activity.AddActivity;
 import com.motanad.motanad.activity.LoginActivity;
 import com.motanad.motanad.models.SharedPref;
 
@@ -56,6 +60,8 @@ public class Util {
     private static Dialog apiCallingProgressDialog;
     private static JSONObject jsonObject1;
     private static String message;
+
+    private static InterstitialAd mInterstitialAd;
 
     public static void setDeviceSreenH(Activity act) {
         DisplayMetrics displaymetrics = new DisplayMetrics();
@@ -100,6 +106,34 @@ public class Util {
                 .error(R.mipmap.ic_launcher)
                 .fallback(R.mipmap.ic_launcher)
                 .into(imageView);
+    }
+
+    public static void getAdd(Context mContext , String androidId){
+        mInterstitialAd = new InterstitialAd(mContext);
+
+        // set the ad unit ID
+        mInterstitialAd.setAdUnitId(mContext.getString(R.string.interstitial_full_screen));
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                // Check the LogCat to get your test device ID
+                .addTestDevice(androidId)
+                .build();
+
+        // Load ads into Interstitial Ads
+        mInterstitialAd.loadAd(adRequest);
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+                showInterstitial();
+            }
+        });
+    }
+
+    private static void showInterstitial() {
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
     }
 
     public static AlertDialog retryAlertDialog(Context mContext, String title, String msg, String firstButton, String SecondButton, View.OnClickListener secondButtonClick) {
