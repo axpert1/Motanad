@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.motanad.motanad.activity.ReferActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:src="@mipmap/ic_refer"/>
+
+        <com.motanad.motanad.custome.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/refer_earn"
+            android:textSize="@dimen/sp_22"
+            android:textColor="@color/colorPrimary"/>
+
+        <com.motanad.motanad.custome.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/refer_friend_and_get"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/gray_font"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:background="@drawable/dashed_boundary"
+            android:orientation="horizontal">
+
+            <com.motanad.motanad.custome.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refferal_code"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_font"
+                android:textStyle="bold"/>
+
+            <com.motanad.motanad.custome.TextViewRegular
+                android:id="@+id/txtRefferalCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="asdf100"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/gray_font"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <com.motanad.motanad.custome.ButtonViewRegular
+            android:id="@+id/btnRefer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_20"
+            android:padding="@dimen/dp_10"
+            android:background="@drawable/btn_bg"
+            android:text="@string/refer_friend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

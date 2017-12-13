@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Motanad</string>
+
+    <string name="rupee">\u20B9</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Are_you_sure_to_logout">Do you want to logout?</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="Server_not_responding">Unable to get data from. Please retry.</string>
+    <string name="Retry">Retry</string>
+    <string name="No">No</string>
+    <string name="msg_internet_connection">internet not connected</string>
+    <string name="error_user_name_blank">Name should not be blank</string>
+    <string name="error_user_user_name_blank">User Name should not be blank</string>
+    <string name="error_email_blank"> Email should not be blank</string>
+    <string name="name_error_msg">Name length minimum 1 characters.</string>
+    <string name="only_special_characters_not_allowed">Only special characters are not allowed in user name.</string>
+    <string name="only_numbers_not_allowed">Only numbers are not allowed in user name.</string>
+    <string name="enter_valid_email">Please enter valid Email.</string>
+    <string name="error_mobile_number_wrong">Please enter valid mobile number</string>
+    <string name="error_password_pattern">Password should be 6-15 characters long</string>
+    <string name="error_password_match">Passowrd is not match</string>
+
+    <string name="error_mobile_number_blank"> Mobile number should not be blank</string>
+    <string name="error_password_blank"> Password should not be blank</string>
+    <string name="resentOTP"><u>Resend OTP</u></string>
+    <string name="Ok">Ok</string>
+    <string name="Submit">Submit</string>
+    <string name="Please_BACK_again_to_exit">Please BACK again to exit</string>
+
+    <!--Side bar Strings-->
+
+
+    <string name="Home">Home</string>
+    <string name="Profile">Profile</string>
+    <string name="MyBalace">My Balance</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="AdvertisWithUs">Advertise With Us</string>
+    <string name="InviteFriends">Invite Friends</string>
+    <string name="Sign_Out">Logout</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Yes">Yes</string>
+    <string name="motanad_balance">Motanad Balance</string>
+    <string name="expected_monthly_income">Expected Monthly Income</string>
+    <string name="withdrawable_balace">Withdrawable Balance</string>
+
+
+    <string-array name="nav_drawer_items">
+        <item>@string/Home</item>
+        <item>@string/Profile</item>
+        <item>@string/MyBalace</item>
+        <item>@string/ChangePassword</item>
+        <item>@string/AdvertisWithUs</item>
+        <item>@string/InviteFriends</item>
+        <item>@string/Sign_Out</item>
+    </string-array>
+
+
+    <!--Login Signup Screen Strings-->
+
+    <string name="mobile_no">Mobile No</string>
+    <string name="Name">Name</string>
+    <string name="Password">Password</string>
+    <string name="forgotPass">Forgot Password?</string>
+    <string name="dont_have_an_account">Don\'t have an account? Sign Up</string>
+    <string name="referral_code">Referral code</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="i_agree_with_terms"><![CDATA[I agree with Terms & Conditions and ]]></string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an account? Login</string>
+    <string name="privacy_policy"> Privacy Policy</string>
+    <string name="check_terms_and_cond_first">Please Check Terms and Conditions first!!!</string>
+    <string name="error_dob_blank">Date Of Birth should not be blank</string>
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="error_refferal_code_blank">Refferal code should not be blank</string>
+
+
+    <!--Change Password Screen Strings-->
+
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="email_mobile">Email id/ Mobile no</string>
+    <string name="balance">Balance:</string>
+    <string name="cashout">Cashout</string>
+
+
+    <!--My Balance Screen Strings-->
+
+    <string name="my_balance">My Balance</string>
+
+
+    <!--Network Screen Strings-->
+
+    <string name="levels">Levels</string>
+    <string name="networks">Networks</string>
+
+
+    <!--Profile Screen Strings-->
+
+    <string name="last_sync">Last Sync:</string>
+    <string name="motanad_balanc">MotanAd Balance :</string>
+    <string name="expected_monthly_payout">Expected Monthly Payout :</string>
+    <string name="withdrawable_amount">Withdrawal Amount :</string>
+    <string name="active_users">Active Users :</string>
+    <string name="refer_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="refferal_code">Refferal Code :</string>
+    <string name="refer_friend">Refer Friend</string>
+    <string name="refer_friend_and_get">Refer a friend and you both will get $ 20 instantly</string>
+
+</resources>

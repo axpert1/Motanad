@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.motanad.motanad.activity.RegisterActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_user"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextFNameReg"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textPersonName"
+                    android:hint="@string/first_name"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_user"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextLNameReg"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textPersonName"
+                    android:hint="@string/last_name"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_user"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextUserNameReg"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_mobile"/>
+
+                <TextView
+                    android:id="@+id/txtCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextMobileReg"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="phone"
+                    android:hint="@string/mobile_no"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_password"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextPasswordReg"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textPassword"
+                    android:hint="@string/Password"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_password"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextConfirmPassReg"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textPassword"
+                    android:hint="@string/confirm_pass"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_dob"/>
+
+                <com.motanad.motanad.custome.TextViewRegular
+                    android:id="@+id/txtDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/sp_14"
+                    android:hint="dd-mm-yyyy"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_gender"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtnMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/male"/>
+
+                    <RadioButton
+                        android:id="@+id/rbtnFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="@string/female"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:visibility="gone"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_refferal"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextReferralCode"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textPassword"
+                    android:hint="@string/referral_code"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"/>
+
+                <com.motanad.motanad.custome.TextViewRegular
+                    android:id="@+id/txtTermsAndCond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_agree_with_terms"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+
+            <com.motanad.motanad.custome.ButtonViewRegular
+                android:id="@+id/btnSignUP"
+                style="@style/button_styple_login_signup"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/sign_up" />
+
+            <com.motanad.motanad.custome.TextViewRegular
+                android:id="@+id/txtAlredyAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/already_have_an_account"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

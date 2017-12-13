@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_55"
+    android:background="@color/colorPrimary"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetEnd="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:theme="@style/AppTheme">
+
+    <com.motanad.motanad.custome.TextViewRegular
+        android:id="@+id/activityTitle"
+        android:layout_width="@dimen/toolbar_title_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_medium" />
+    <!--<ImageView-->
+        <!--android:id="@+id/toolbar_serarch"-->
+        <!--android:layout_width="@dimen/toolbar_icon_width"-->
+        <!--android:layout_height="@dimen/toolbar_icon_height"-->
+        <!--android:layout_gravity="right|center_vertical"-->
+        <!--android:layout_marginRight="@dimen/dp_20"-->
+        <!--android:visibility="gone"-->
+        <!--app:srcCompat="@drawable/ic_search_black_24dp"-->
+        <!--/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/toolbar_user"-->
+        <!--android:layout_width="@dimen/toolbar_icon_width"-->
+        <!--android:layout_height="@dimen/toolbar_icon_height"-->
+        <!--android:layout_gravity="right|center_vertical"-->
+        <!--android:layout_marginRight="@dimen/dp_20"-->
+        <!--android:visibility="gone"-->
+        <!--app:srcCompat="@mipmap/user"-->
+        <!--/>-->
+
+
+</android.support.v7.widget.Toolbar>

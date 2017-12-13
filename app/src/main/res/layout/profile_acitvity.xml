@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.motanad.motanad.activity.ProfileAcitvity">
+    
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/profileHeader"
+                android:padding="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imvSync"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_5"
+                        android:background="@drawable/rounded_btn_bg_green"
+                        android:src="@mipmap/ic_sync"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="@string/last_sync"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/txtSyncTime"
+                        android:layout_width="@dimen/dp_0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:text="1 hr ago"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/imvNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_bell" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtProfileActive"
+                        android:layout_width="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_10"
+                        android:background="@drawable/rounded_btn_bg_green"/>
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:id="@+id/txtProfileUName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="Hemant Jangid"
+                        android:textSize="@dimen/sp_18"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/llayout_white_border"
+                    android:padding="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/motanad_balanc"
+                        android:layout_weight=".4"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white" />
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:id="@+id/txtMotanBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="154262"
+                        android:gravity="right|center"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:background="@drawable/llayout_white_border"
+                    android:orientation="horizontal">
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expected_monthly_payout"
+                        android:layout_weight=".4"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white" />
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:id="@+id/txtMonthlyPayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="154262"
+                        android:gravity="right|center"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:background="@drawable/llayout_white_border"
+                    android:orientation="horizontal">
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/withdrawable_amount"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white" />
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:id="@+id/txtWithdrawalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="154262"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_20">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/dp_3"
+                    app:cardCornerRadius="@dimen/dp_4"
+                    app:contentPadding="@dimen/dp_10">
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@mipmap/ic_active_users"/>
+
+                        <com.motanad.motanad.custome.TextViewRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="@string/active_users"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/sp_18"/>
+
+                        <com.motanad.motanad.custome.TextViewRegular
+                            android:id="@+id/txtActiveUsers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:text="124532"
+                            android:textSize="@dimen/sp_18"
+                            android:textColor="@color/green"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_20"
+                android:gravity="center"
+                android:orientation="vertical">
+                
+                <com.motanad.motanad.custome.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refer_earn"
+                    android:textSize="@dimen/sp_22"
+                    android:textColor="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:padding="@dimen/dp_10"
+                    android:background="@drawable/dashed_boundary"
+                    android:orientation="horizontal">
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refferal_code"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/gray_font"
+                        android:textStyle="bold"/>
+
+                    <com.motanad.motanad.custome.TextViewRegular
+                        android:id="@+id/txtRefferalCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="asdf100"
+                        android:textSize="@dimen/sp_16"
+                        android:textColor="@color/gray_font"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <com.motanad.motanad.custome.ButtonViewRegular
+                    android:id="@+id/btnProfileRefer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:padding="@dimen/dp_10"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/refer_friend"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16"
+                    android:textAllCaps="false"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

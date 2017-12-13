@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A1252B</color>
+    <color name="colorPrimaryDark">#A1252B</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textPrimary">#000</color>
+
+    <color name="profileHeader">#252C24</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="photo_fragment_gray">#EEEEEE</color>
+    <color name="app_bg">@color/white</color>
+
+    <color name="divider_color">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="toolbar_bg">@color/black</color>
+    <color name="light_black">#8C000000</color>
+    <color name="btn_bg">#ffcc1b</color>
+    <color name="gray">#8C8885</color>
+    <color name="dark_gray">#424242</color>
+    <color name="gray_font">#666</color>
+    <color name="green">#2AB61F</color>
+    <color name="attempt1">#00000000</color>
+    <color name="orange">#FF6C00</color>
+    <color name="pink">#B80CD2</color>
+    <color name="tranparent">#00000000</color>
+    <color name="semi_transpaent">#22000000</color>
+    <color name="platinum">#FBECCE</color>
+    <color name="gold">#FAEA93</color>
+    <color name="silver">#DDDDDD</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#FFBB33</color>
+</resources>

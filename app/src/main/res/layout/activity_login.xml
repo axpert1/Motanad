@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.motanad.motanad.activity.LoginActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motanad"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_22"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_user"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextMobileLogin"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email_mobile"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_password"/>
+
+                <com.motanad.motanad.custome.EditTextViewRegular
+                    android:id="@+id/eTextPasswordLogin"
+                    style="@style/edit_text_style_login_signup"
+                    android:inputType="textPassword"
+                    android:hint="@string/Password"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/light_gray" />
+
+            <com.motanad.motanad.custome.ButtonViewRegular
+                android:id="@+id/btnLogin"
+                style="@style/button_styple_login_signup"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/login" />
+
+            <com.motanad.motanad.custome.TextViewRegular
+                android:id="@+id/txtForgotPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_gravity="right"
+                android:text="@string/forgotPass"
+                android:textColor="@color/black"/>
+
+            <com.motanad.motanad.custome.TextViewRegular
+                android:id="@+id/txtDontAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_40"
+                android:text="@string/dont_have_an_account" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</LinearLayout>
